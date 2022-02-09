@@ -14,10 +14,11 @@ Default: 1
 ___ 02 COLORS ___
 
 - Primary: #e67e22
-- Tints:
-- Shades:
+- Tints: #fdf2e9
+- Shades: #cf711f
 - Accebts:
 - Greys: #555
+#333
 
 ___ 03 IMAGES 04 ICONS ___ ✅
 
@@ -44,8 +45,113 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.heading-primary {
+  color: #333;
+  font-size: 5.2rem;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+}
+
+.btn--cta:link,
+.btn--cta:visited {
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.btn--cta:hover,
+.btn--cta:active {
+  background-color: #cf711f;
+}
+
+.btn--ghost:link,
+.btn--ghost:visited {
+  color: #555;
+  background-color: #fff;
+}
+
+.btn--ghost:hover,
+.btn--ghost:active {
+  background-color: #fdf2e9;
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.mrg-r-sm {
+  margin-right: 1.6rem !important;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-txt {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-txt span {
+  color: #cf711f;
+  font-weight: 700;
 }
